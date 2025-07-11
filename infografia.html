@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infografía</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="centrartodo">
+
+	
+
+
+      <div class="contenedorboton"></div>
+		<button class="primary" id="primero" onclick="window.dialog.showModal();"><img width="45px" src="./cuentahilos/icontrama.png" alt="tramas"> <p>TRAMAS</p></button>
+
+<dialog id="dialog">
+     <div class="cajadoble">
+		<div class="imgmodal">
+ <img class="imgcadamodal" src="./cuentahilos/roseta-moire.jpg" alt="prueba"  width="100%">
+
+		</div>
+		<div class="textmodal">
+        <h2>TRAMAS</h2>
+	<p>Las tramas son Patrones de puntos que simulan tonos,
+clasificadas en:</p>
+	<p>AM (Amplitud Modulada): Un tipo de trama que varía sus diferencias tonales en base al tamaño.
+FM (Frecuencia Modulada): Obtengo sus diferencias tonales en base al tamaño determinado. Modifica la resolución, la distancia entre los puntos. 
+(Puntos pequeños = poca resolución, puntos grandes = más resolución).
+Híbrida: Combinación de ambas tramas, casi no se utiliza, AM en sombras, FM en luces.</p>
+  <h2>Inclinación: ¿Porqué? ¿Para qué?</h2>
+  <p>La trama tiene una inclinación de cada color de 30º, que se produce para evitar la
+superposición de los puntos (mala impresión) y la aparición de unas ilusiones
+ópticas llamadas “moiré”. Gracias a la inclinación obtenemos
+una roseta armónica.</p>
+		</div>
+	 </div>
+      
+
+
+	
+        <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+
+	
+</dialog>
+<button class="primary" id="segundo" onclick="window.dialoge.showModal();"><img width="45px" src="./cuentahilos/iconcmyk.png" alt="separación_de_colores"> <P>COLORES</P></button>
+<dialog id="dialoge">
+     <div class="cajadoblee">
+		<div class="imgmodale">
+ <div class="contenedor" id="contenedor">
+    <img class="imagen1" src="./cuentahilos/estocastica _cmyk.png" alt="imagen1">
+    <img class="imagen2" src="./cuentahilos/Cmyk _trama_normal.png" alt="imagen2">
+  </div>
+
+		</div>
+		<div class="textmodale">
+        <h2>SEPARACIÓN DE COLORES</h2>
+	<p>Se divide la imagen en 4 canales: Cian, Magenta,
+Amarillo y Negro.
+Cada canal genera una plancha (analógico) o es
+interpretado por el RIP (digital) para aplicar tinta.</p>
+<p>Cada color se imprime por
+separado y luego se superponen
+para formar la imagen final.</p>
+<p>¡Pasa el mouse sobre
+la imágen para ver la
+separación CMYK!</p>
+	
+ 
+		</div>
+	 </div>
+      
+
+
+	
+        <button onclick="window.dialoge.close();" aria-label="close" class="xe">❌</button>
+
+	
+</dialog>
+
+	<button class="primary" id="tercero" onclick="window.dialogee.showModal();"><img width="45px" src="./cuentahilos/icon3.png" alt="control_de_calidad"> <P>CALIDAD</P></button>
+
+<dialog id="dialogee">
+     <div class="cajadobleee">
+		<div class="imgmodalee">
+ <img class="imgcadamodalee" src="./cuentahilos/over.jpg" alt="prueba"  width="100%">
+
+		</div>
+		<div class="textmodalee">
+        <h2>OVERPRINT </h2>
+	<p>Es la técnica de imprimir un color directamente sobre otro, en lugar de que el color inferior sea calado (eliminado) para dar paso al color superior. Esto se utiliza para evitar huecos o halos blancos que pueden aparecer debido a problemas de registro (alineación) entre las diferentes planchas de impresión, especialmente con objetos como texto negro sobre fondos de color, a su vez se produce el trapping que es el resultado ante la superposición de los colores.</p>
+  <h2>FINGERPRINT</h2>
+  <p>Es el proceso que permite calibrar y perfilar una impresora para saber cómo
+reproduce los colores. Así, se ajusta todo
+el flujo de trabajo para que los colores
+se vean igual en pantalla y en la impresión.</p>
+		</div>
+	 </div>
+      
+
+
+	
+        <button onclick="window.dialogee.close();" aria-label="close" class="xee">❌</button>
+
+	
+</dialog>
+<div  id="derecha">
+	<button class="primary" id="botonmover" onclick="window.dialogeee.showModal();"><img width="45px" src="./cuentahilos/iconimagen.png" alt="estructura_de_una_imágen"><p>IMAGEN</p></button>
+</div>
+	
+
+<dialog id="dialogeee">
+     <div class="cajadobleeee">
+		<div class="imgmodaleee">
+ <img class="imgcadamodaleee" src="./cuentahilos/imgdigital.jpg" alt="tramanormal"  width="80%">
+ <img class="imgcadamodaleee" src="./cuentahilos/imgimpresa.jpg" alt="tramapuntitos"  width="80%">
+
+		</div>
+		<div class="textmodaleee">
+        <h2>ESTRUCTURA DE UNA IMÁGEN</h2>
+		<h3>Digital</h3>
+	<p>Es una estructura matricial (raster) basada
+en píxeles, cada uno con información de
+color (RGB o CMYK).</p>
+	<p>Su resolución se mide en ppi(pixeles por
+pulgada).</p>
+<p>Las imágenes vectoriales, en cambio, están
+definidas por fórmulas matemáticas puntos.</p>
+  <h3>Impresa</h3>
+  <p>Es una estructura matricial (raster)
+compuesta por puntos de tinta generados
+por tramas.</p>
+<p>Simulan luces, sombras y colores mediante
+disposición y tamaño de puntos</p>
+<p>Tipos de trama: AM, FM, híbrida</p>
+		</div>
+	 </div>
+      
+
+
+	
+        <button onclick="window.dialogeee.close();" aria-label="close" class="xeee">❌</button>
+
+	
+</dialog>
+	</div>
+
+		<div class="circuloorden">
+              <div class="cards">
+	<input type="radio" name="cardb" id="cardb-1" checked>
+	<input type="radio" name="cardb" id="cardb-2">
+	<input type="radio" name="cardb" id="cardb-3">
+	<input type="radio" name="cardb" id="cardb-4">
+	<input type="radio" name="cardb" id="cardb-5">
+	<input type="radio" name="cardb" id="cardb-6">
+	<input type="radio" name="cardb" id="cardb-7">
+	<input type="radio" name="cardb" id="cardb-8">
+	<div class="circle-mask   ">
+	<div class="circle-container">
+		<div class="nombres  izquierda">
+			<img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho">
+		  
+		</div>
+		<div class="nombres  izquierda"><img class="digitalimg" src="./cuentahilos/chorrotinta.png" alt="morpho">
+		</div>
+				<div class="nombres3   izquierda"><img class="digitalimg" src="./cuentahilos/plotter.png" alt="morpho">
+				</div>
+				<div class="izquierda" ><img class="digitalimg" src="./cuentahilos/laser.png" alt="morpho" >
+				</div>
+					<div class="nombres   izquierda"><img class="digitalimg" src="./cuentahilos/chorrotinta.png" alt="morpho">
+				</div>
+				
+						
+	</div>
+</div>
+	<div class="contents">
+
+		
+		<article>
+		
+			<div class="buttons">
+				<p class="textoboton  textobotonizquierda">Impresora Inkjet</p>
+				
+                       <label for="cardb-X" title="88 Butterfly" disabled>&#10094;</label>
+					<label for="cardb-2" title="Monarch Butterfly">&#10095;</label>
+				
+					
+					
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons">
+				<p class="textoboton textobotonizquierda">Impresora láser</p>
+					<label for="cardb-1" title="Blue Morpho">&#10094;</label>
+					<label for="cardb-3" title="Peacock Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons">
+				<p class="textoboton textobotonizquierda">Plotter</p>
+					<label for="cardb-2" title="Monarch Butterfly">&#10094;</label>
+					<label for="cardb-X" title="Blue Morpho" disabled>&#10095;</label>
+			</div>
+		</article>
+		
+	
+		
+		
+	
+		
+		
+	</d>
+</div>
+
+
+</div > 
+
+    <div class="cards  cardsindustrial">
+	<input type="radio" name="card" id="card-1" checked>
+	<input type="radio" name="card" id="card-2">
+	<input type="radio" name="card" id="card-3">
+	<input type="radio" name="card" id="card-4">
+	<input type="radio" name="card" id="card-5">
+	<input type="radio" name="card" id="card-6">
+	<input type="radio" name="card" id="card-7">
+	<input type="radio" name="card" id="card-8">
+	<div class="circle-mask   ajustarmas">
+	<div class="circle-container">
+	
+			<div class="nombres   industrial"><img  class="imgindustrial"  src="./cuentahilos/offset.png" alt="offset">
+			</div>
+				<div class="nombres3  industrial"><img class="imgindustrial" src="./cuentahilos/hueco-01.png" alt="morpho">
+				</div>
+					<div class="nombres2   industrial"><img class="imgindustrial" src="./cuentahilos/serigrafia.png" alt="morpho">
+					</div>
+						<div class="nombres2     industrial"><img class="imgindustrial" src="./cuentahilos/flexografia.png">
+						
+						</div>
+							<div class="nombres2   industrial"><img class="imgindustrial" src="./cuentahilos/off.png" alt="morpho">
+							</div>
+								<div class="nombres   industrial"><img class="imgindustrial" src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho">
+								</div>
+	</div>
+</div>
+	<div class="contents">
+
+	<article>
+		
+			<div class="buttons mover">
+				<p class="textoboton   textobotonderecha ">Offset</p>
+				
+                       <label for="card-X" title="88 Butterfly" disabled>&#10094;</label>
+					<label for="card-2" title="Monarch Butterfly">&#10095;</label>
+				
+					
+					
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons mover">
+				<p class="textoboton  textobotonderecha">Flexografía</p>
+					<label for="card-1" title="Blue Morpho">&#10094;</label>
+					<label for="card-3" title="Peacock Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons mover">
+				<p class="textoboton textobotonderecha">Serigrafía</p>
+					<label for="card-2" title="Monarch Butterfly">&#10094;</label>
+					<label for="card-4" title="Ulysses Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+	
+		<article>
+			
+			<div class="buttons mover">
+				<p class="textoboton textobotonderecha">Huecograbado</p>
+					<label for="card-3" title="Peacock Butterfly" >&#10094;</label>
+						<label for="card-X" title="Blue Morpho" disabled>&#10095;</label>
+			</div>
+		</article>
+		<!-- <article>
+		
+			<div class="buttons">
+					<p class="textoboton">Offset</p>
+					<label for="card-X" title="88 Butterfly" disabled>&#10094;</label>
+					<label for="card-2" title="Monarch Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+
+		<article>
+			
+			<div class="buttons">
+					<p class="textoboton">Flexografía</p>
+					<label for="card-1" title="Blue Morpho">&#10094;</label>
+					<label for="card-3" title="Peacock Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons">
+					<p class="textoboton">Serigrafía</p>
+					<label for="card-2" title="Monarch Butterfly">&#10094;</label>
+					<label for="card-4" title="Ulysses Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons">
+					<p class="textoboton">Huecograbado</p>
+					<label for="card-3" title="Peacock Butterfly">&#10094;</label>
+					<label for="cardb-X" title="Blue Morpho" disabled>&#10095;</label>
+			</div>
+		</article> -->
+		
+	
+		
+	</d>
+</div>
+		</div>
+   
+</body>
+  <script src="cuentahilomov.js"></script>
+</html>
+          <!-- <div class="contenedor" id="contenedor">
+    <img class="imagen1" src="./cuentahilos/estocastica _cmyk.png" alt="imagen1">
+    <img class="imagen2" src="./cuentahilos/Cmyk _trama_normal.png" alt="imagen2">
+  </div>
+   
+    <div class="cards">
+	<input type="radio" name="cardb" id="cardb-1" checked>
+	<input type="radio" name="cardb" id="cardb-2">
+	<input type="radio" name="cardb" id="cardb-3">
+	<input type="radio" name="cardb" id="cardb-4">
+	<input type="radio" name="cardb" id="cardb-5">
+	<input type="radio" name="cardb" id="cardb-6">
+	<input type="radio" name="cardb" id="cardb-7">
+	<input type="radio" name="cardb" id="cardb-8">
+	<div class="circle-mask">
+	<div class="circle-container">
+		<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+		<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+			<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+				<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+					<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+						<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+							<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+								<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+	</div>
+</div>
+	<div class="contents">
+
+		
+		<article>
+		
+			<div class="buttons">
+					<label for="cardb-X" title="88 Butterfly" disabled>&#10094;</label>
+					<label for="cardb-2" title="Monarch Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons">
+					<label for="cardb-1" title="Blue Morpho">&#10094;</label>
+					<label for="cardb-3" title="Peacock Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons">
+					<label for="cardb-2" title="Monarch Butterfly">&#10094;</label>
+					<label for="cardb-4" title="Ulysses Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+	
+		<article>
+			
+			<div class="buttons">
+					<label for="cardb-3" title="Peacock Butterfly">&#10094;</label>
+					<label for="cardb-5" title="Glasswing Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+		
+			<div class="buttons">
+					<label for="cardb-4" title="Ulysses Butterfly">&#10094;</label>
+					<label for="cardb-6" title="Painted Lady">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+	
+			<div class="buttons">
+					<label for="cardb-5" title="Glasswing">&#10094;</label>
+					<label for="cardb-7" title="Rajah Brooke’s Birdwing">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+		
+			<div class="buttons">
+					<label for="cardb-6" title="Painted Lady">&#10094;</label>
+					<label for="cardb-8" title="88 Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+		
+			<div class="buttons">
+					<label for="cardb-7" title="Rajah Brooke’s Birdwing">&#10094;</label>
+					<label for="cardb-X" title="Blue Morpho" disabled>&#10095;</label>
+			</div>
+            	</article>
+	</d>
+</div>
+
+
+</div> 
+
+    <div class="cards">
+	<input type="radio" name="card" id="card-1" checked>
+	<input type="radio" name="card" id="card-2">
+	<input type="radio" name="card" id="card-3">
+	<input type="radio" name="card" id="card-4">
+	<input type="radio" name="card" id="card-5">
+	<input type="radio" name="card" id="card-6">
+	<input type="radio" name="card" id="card-7">
+	<input type="radio" name="card" id="card-8">
+	<div class="circle-mask">
+	<div class="circle-container">
+		<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+		<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+			<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+				<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+					<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+						<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+							<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+								<div><img src="https://mediaserver.goepson.com/ImConvServlet/imconv/0b6b6f6b5bccbd9b2a89b0b1117c730e3bcab3a1/1200Wx1200H?use=banner&hybrisId=B2C&assetDescr=20Lio2_MBL_blk_01" alt="morpho"></div>
+	</div>
+</div>
+	<div class="contents">
+
+	
+		<article>
+		
+			<div class="buttons">
+					<label for="card-X" title="88 Butterfly" disabled>&#10094;</label>
+					<label for="card-2" title="Monarch Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+
+		<article>
+			
+			<div class="buttons">
+					<label for="card-1" title="Blue Morpho">&#10094;</label>
+					<label for="card-3" title="Peacock Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons">
+					<label for="card-2" title="Monarch Butterfly">&#10094;</label>
+					<label for="card-4" title="Ulysses Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+			
+			<div class="buttons">
+					<label for="card-3" title="Peacock Butterfly">&#10094;</label>
+					<label for="card-5" title="Glasswing Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+	
+		<article>
+		
+			<div class="buttons">
+					<label for="card-4" title="Ulysses Butterfly">&#10094;</label>
+					<label for="card-6" title="Painted Lady">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+	
+			<div class="buttons">
+					<label for="card-5" title="Glasswing">&#10094;</label>
+					<label for="card-7" title="Rajah Brooke’s Birdwing">&#10095;</label>
+			</div>
+		</article>
+		
+		
+		<article>
+		
+			<div class="buttons">
+					<label for="card-6" title="Painted Lady">&#10094;</label>
+					<label for="card-8" title="88 Butterfly">&#10095;</label>
+			</div>
+		</article>
+		
+	
+		<article>
+		
+			<div class="buttons">
+					<label for="card-7" title="Rajah Brooke’s Birdwing">&#10094;</label>
+					<label for="card-X" title="Blue Morpho" disabled>&#10095;</label>
+			</div>
+            	</article>
+	</d>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+  <script src="cuentahilomov.js"></script>
+</body>
+</html>
